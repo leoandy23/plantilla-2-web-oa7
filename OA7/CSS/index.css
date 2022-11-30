@@ -10,7 +10,7 @@
   --third-alpha-color: #00fff0f7;
   --link-color: #509ee3;
   --text-color: #222222;
-  --max-width: 1000px;
+  --max-width: 1200px;
   --font: "Raleway", sans-serif;
   --header-height: 110px;
 }
@@ -744,13 +744,50 @@ p {
   text-align: justify;
 }
 
+.row-reverse {
+  flex-direction: row-reverse;
+}
 /*##### Site Styles #####*/
+/****Contadores-Home****/
+.contadores {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--third-color) 40%,
+    var(--black-alpha-color) 88%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contadores div {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 240, 1) 40%,
+    rgba(193, 193, 193, 1) 88%
+  );
+  text-align: center;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.contadores div > * {
+  padding: 1rem;
+}
 /****Frames-Home****/
 .frame-container {
   text-align: center;
 }
 
 .frame-img {
+  padding: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   min-width: 250px;
@@ -859,12 +896,30 @@ p {
   text-align: center;
 }
 @media screen and (min-width: 800px) {
+  /****Contadores-Home****/
+  .contadores {
+    flex-direction: row;
+  }
+
+  .contadores div {
+    width: 50%;
+  }
   /****Frames-Home****/
   .frame-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--max-width);
     text-align: left;
     padding-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 20% 40% 40%;
+    display: flex;
+  }
+
+  .frame-container > * {
+    padding: 1.5rem;
+  }
+
+  .frame-info {
+    width: 850px;
   }
 
   .frame-img {
