@@ -1,6 +1,7 @@
 /************** ----Custom Properties---- ************/
 :root {
   --first-color: #cccccc;
+  --first-dark-color: #666;
   --second-color: #000e8a;
   --white-color: #ffffff;
   --white-alpha-color: #fff8;
@@ -757,53 +758,49 @@ p {
 /*##### Site Styles #####*/
 /****Boton-Regresar****/
 .btn-back {
-  z-index: 999;
+  /* z-index: 999; */
+  /* width: 100%; */
   padding: 1rem;
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 0;
 }
 
 .btn-back i {
-  color: var(--third-color);
+  color: var(--first-dark-color);
 }
 /****Carousel-Home****/
 @keyframes carousel {
   0% {
-    overflow-x: hidden;
     transform: translateX(0%);
   }
 
   20% {
-    overflow-x: hidden;
     transform: translateX(-20%);
   }
 
   40% {
-    overflow-x: hidden;
     transform: translateX(-40%);
   }
 
   60% {
-    overflow-x: hidden;
     transform: translateX(-60%);
   }
 
   80% {
-    overflow-x: hidden;
     transform: translateX(-80%);
   }
 }
 
 .carousel-container {
-  width: 500%;
+  padding: 0.5rem;
+  margin: 0;
+  width: 100%;
   display: flex;
-  overflow-x: hidden;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--first-color);
-  transition: transform 5s ease-in-out;
-  animation: carousel 25s ease-in-out 5s infinite;
   border-top: thick solid var(--black-alpha-color);
   border-bottom: thick solid var(--black-alpha-color);
 }
@@ -999,6 +996,16 @@ p {
 }
 @media screen and (min-width: 800px) {
   /****Carusel-Home ****/
+  .carousel-container {
+    width: 500%;
+    overflow-x: hidden;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: transform 5s ease-in-out;
+    animation: carousel 25s ease-in-out 5s infinite;
+  }
+
   .carousel-content {
     width: 800px;
     margin-left: auto;

@@ -17,13 +17,9 @@
     $menu.classList.remove("is-active");
   });
 
-  setInterval(function () {
-    if (window.innerWidth <= 800) {
-      const $btnSubmenu = d.querySelector(".btn-submenu"),
-        $submenu = d.getElementById("submenu");
-      $btnSubmenu.addEventListener("click", (e) => {
-        $submenu.classList.toggle("none");
-      });
-    }
-  }, 0);
+  const $btnSubmenu = d.querySelector(".btn-submenu"),
+    $submenu = d.getElementById("submenu");
+  $btnSubmenu.addEventListener("click", (e) => {
+    $submenu.classList.toggle("none");
+  });
 })(document);
