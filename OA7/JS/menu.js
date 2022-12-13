@@ -25,5 +25,5 @@
         $submenu.classList.toggle("none");
       });
     }
-  }, 1);
+  }, 0);
 })(document);
