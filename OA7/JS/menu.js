@@ -17,10 +17,13 @@
     $menu.classList.remove("is-active");
   });
 
-  if (window.innerWidth <= 800) {
-    const $btnSubmenu = d.querySelector(".btn-submenu");
-    $btnSubmenu.addEventListener("click", (e) => {
-      $btnSubmenu.lastElementChild.classList.toggle("none");
-    });
-  }
+  setInterval(function () {
+    if (window.innerWidth <= 800) {
+      const $btnSubmenu = d.querySelector(".btn-submenu"),
+        $submenu = d.getElementById("submenu");
+      $btnSubmenu.addEventListener("click", (e) => {
+        $submenu.classList.toggle("none");
+      });
+    }
+  }, 1);
 })(document);
