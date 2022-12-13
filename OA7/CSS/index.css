@@ -748,6 +748,64 @@ p {
   flex-direction: row-reverse;
 }
 /*##### Site Styles #####*/
+/****Carousel-Home****/
+@keyframes carousel {
+  0% {
+    transform: translateX(0%);
+  }
+
+  20% {
+    transform: translateX(-20%);
+  }
+
+  40% {
+    transform: translateX(-40%);
+  }
+
+  60% {
+    transform: translateX(-60%);
+  }
+
+  80% {
+    transform: translateX(-80%);
+  }
+}
+
+.carousel-container {
+  width: 500%;
+  display: flex;
+  overflow-x: hidden;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--first-color);
+  transition: transform 5s ease-in-out;
+  animation: carousel 25s ease-in-out 5s infinite;
+  border-top: thick solid var(--black-alpha-color);
+  border-bottom: thick solid var(--black-alpha-color);
+}
+
+.carousel-content {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.carousel-content img {
+  /* padding-left: 2rem;
+  padding-right: 2rem; */
+  /* width: 70vw;
+  height: 60vh; */
+  width: 300px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
 /****Contadores-Home****/
 .contadores {
   width: 100%;
@@ -896,6 +954,20 @@ p {
   text-align: center;
 }
 @media screen and (min-width: 800px) {
+  /****Carusel-Home ****/
+  .carousel-content {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+
+  .carousel-content img {
+    width: 700px;
+    height: 350px;
+  }
+
   /****Contadores-Home****/
   .contadores {
     flex-direction: row;
@@ -908,7 +980,7 @@ p {
   .frame-container {
     margin-left: auto;
     margin-right: auto;
-    width: var(--max-width);
+    max-width: var(--max-width);
     text-align: left;
     padding-bottom: 2rem;
     display: flex;
