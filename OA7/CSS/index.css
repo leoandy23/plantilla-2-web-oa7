@@ -2,6 +2,7 @@
 :root {
   --first-color: #cccccc;
   --first-dark-color: #666;
+  --first-dark-alpha-color: #6668;
   --second-color: #000e8a;
   --white-color: #ffffff;
   --white-alpha-color: #fff8;
@@ -435,6 +436,66 @@ p {
   }
 }
 
+/*****Jobs Done Cards*****/
+
+.card-job-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--first-dark-alpha-color);
+  transition: all 1s;
+}
+
+.card-job-done {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: justify;
+  background-color: var(--white-color);
+}
+
+.card-job-done > * {
+  padding: 0.5rem;
+}
+
+.card-job-done img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-close {
+  text-decoration: none;
+  margin: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0rem;
+  top: 0rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--third-color);
+  color: var(--text-color);
+}
+
+.card-job-container[id|="job"]:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 /*****Services Cards*****/
 .services-container {
   margin-top: 2rem;
@@ -458,6 +519,20 @@ p {
   padding: 0 1rem;
 }
 
+.service-card-img {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card-img img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+}
 /*****Products Cards*****/
 .product-card {
   max-width: 300px;
@@ -766,7 +841,7 @@ p {
 /*##### Site Styles #####*/
 /****Boton-Regresar****/
 .btn-back {
-  /* z-index: 999; */
+  z-index: 999;
   /* width: 100%; */
   padding: 1rem;
   position: fixed;
@@ -921,6 +996,12 @@ p {
   align-items: center;
 }
 
+.charact-info:hover,
+.charact-img i:hover {
+  transition: all 1s;
+  color: var(--second-color);
+}
+
 .charact-img {
   margin: 1rem auto;
   text-align: center;
@@ -988,20 +1069,20 @@ p {
 
 .subservice-card {
   margin-bottom: 3rem;
-  width: 175px;
+  width: 200px;
   display: flex;
   flex-direction: column;
 }
 
 .subservice-img {
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
   border: thin solid var(--black-alpha-color);
 }
 
 .subservice-img img {
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 200px;
 }
 
 .subservice-info {
@@ -1113,19 +1194,19 @@ p {
   }
 
   .subservice-card {
-    margin: 3rem auto;
+    margin: 3rem;
     width: 450px;
     flex-direction: row;
   }
 
   .subservice-img {
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    height: 170px;
   }
 
   .subservice-img img {
-    width: 120px;
-    height: 120px;
+    width: 170px;
+    height: 170px;
     object-fit: cover;
     object-position: center;
   }
