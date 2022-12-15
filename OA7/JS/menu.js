@@ -11,6 +11,7 @@
   });
 
   d.addEventListener("click", (e) => {
+    // $menu.classList.remove("is-active");
     if (!e.target.matches(".menu")) return false;
     $btnMenu.firstElementChild.classList.remove("none");
     $btnMenu.lastElementChild.classList.add("none");
@@ -20,6 +21,8 @@
   const $btnSubmenu = d.querySelector(".btn-submenu"),
     $submenu = d.getElementById("submenu");
   $btnSubmenu.addEventListener("click", (e) => {
-    $submenu.classList.toggle("none");
+    if (window.innerWidth <= 800) {
+      $submenu.classList.toggle("none");
+    }
   });
 })(document);

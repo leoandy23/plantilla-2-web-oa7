@@ -940,12 +940,12 @@ p {
 /*****Info Subservice*****/
 .hero-image-subservice {
   width: 100%;
-  background-image: url(../Assets/Hero-Image-Tipe-Service.jpg);
-  background-attachment: fixed;
+  background-image: var(--hero-image-subservice);
+  background-attachment: var(--hero-attachment-subservice);
 }
 
 .hero-image-subservice-opacity {
-  background-color: var(--white-alpha-color);
+  background-color: var(--hero-opacity-color);
   padding: 1rem;
 }
 
@@ -997,6 +997,11 @@ p {
   width: 175px;
   height: 175px;
   border: thin solid var(--black-alpha-color);
+}
+
+.subservice-img img {
+  width: 175px;
+  height: 175px;
 }
 
 .subservice-info {
@@ -1101,20 +1106,32 @@ p {
   /*****Subservices Cards*****/
 
   .subservices-container {
-    width: var(--max-width);
+    width: 850px;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: repeat(2, 1fr);
   }
 
   .subservice-card {
-    margin-left: auto;
-    margin-right: auto;
-    width: 375px;
+    margin: 3rem auto;
+    width: 450px;
     flex-direction: row;
   }
 
+  .subservice-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .subservice-img img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+  }
+
   .subservice-info {
+    width: 280px;
     padding-left: 0.5rem;
   }
 }
