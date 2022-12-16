@@ -9,6 +9,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <title>OA7INGENIERIAS</title>
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="icon" href="Assets/LogoOA7.svg" />
@@ -51,31 +57,39 @@
         <img src="Assets/LogoOA7.svg" alt="Logo" />
       </div>
       <div class="header-info">
-        <h3>Dirección:</h3>
-        <a href="#">
-          <h4>Quito: </h4>
-        <small><i>Calle de las nueces y Psj. Salazar</i></small>
+        <h3>Direcciones:</h3>
+        <a href="https://bit.ly/3PtxwwM" target="_blank">
+          <h4>Matriz:</h4>
+          <small
+            ><i>
+              De las Nueces N53C y Pasaje Salazar, 170514, Quito – Ecuador</i
+            ></small
+          >
         </a>
-        <a href="#">
-          <h4>Cayambe: </h4>
-        <small><i>Calle Terán y Calle Libertad</i></small>
+        <a href="https://bit.ly/3YqghAE" target="_blank">
+          <h4>Sucursal:</h4>
+          <small
+            ><i
+              >Calle Libertad y Terán esquina, 171002, Cayambe - Ecuador</i
+            ></small
+          >
         </a>
       </div>
       <div class="header-info">
         <h3>Contacto:</h3>
-        <a href="#">
-          <img src="Assets/email.svg" alt="svg-email" />
-        <small><i>  oa7ingenierias@gmail.com</i></small>
+        <a href="https://wa.me/+593999011921" target="_blank">
+          <img src="Assets/whatsapp.svg" alt="whatsapp" />
+          <small><i>+593 95 905 2701</i></small>
         </a>
-        <a href="#">
-          <img src="Assets/facebook.svg" alt="svg-facebook" />
-        <small><i>  oa7ingenierias</i></small>
-        </a> 
+        <a href="contact.html">
+          <img src="Assets/email.svg" alt="svg-email" />
+          <small><i>oa7ingenierias@gmail.com</i></small>
+        </a>
       </div>
       <div class="header-languaje">
-          <span class="es-languaje">Español</span>
-          <input type="checkbox" class="btn-languaje">
-          <span class="en-languaje">Inglés</span>
+        <span class="es-languaje">Español</span>
+        <input type="checkbox" class="btn-languaje" />
+        <span class="en-languaje">Inglés</span>
       </div>
     </header>
 
@@ -89,20 +103,21 @@
           alt="Btn-Menu-Close" />
       </button>
       <nav class="menu">
-        <a href="index.html">Home</a>
+        <a href="index.html">INICIO</a>
         <div class="btn-submenu">
           <aside>
-            <span>Servicios</span>
-            <img src="Assets/Submenu-Open.svg" alt="Btn-Submenu-Open">
+            <span>SERVICIOS</span>
+            <img src="Assets/Submenu-Open.svg" alt="Btn-Submenu-Open" />
           </aside>
-          <nav class="submenu none">
-            <a href="service-1.html">Servicio 1</a>
-            <a href="service-1.html">Servicio 2</a>
-            <a href="service-1.html">Servicio 3</a>
-            <a href="services.html">Otros Servicios</a>
-          </div>
-        <a href="#nosotros">Nosotros</a>
-        <a href="contact.html">Contacto</a>
+          <nav class="submenu none" id="submenu">
+            <a href="service-1.html">TOPOGRAFÍA</a>
+            <a href="service-2.html">SOLUCIONES TECNOLÓGICAS</a>
+            <a href="service-3.html">INGENIERÍA CIVIL</a>
+            <!-- <a href="services.html">Otros Servicios</a> -->
+          </nav>
+        </div>
+        <a href="#Home">NOSOTROS</a>
+        <a href="contact.html">CONTACTO</a>
       </nav>
     </section>
 
@@ -128,34 +143,68 @@
 
     <section class="section info-nosotros">
       <article>
-        <h2>NUESTRA MISION</h2>
+        <h2>Slogan</h2>
         <p class="text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non
-          harum reiciendis maxime, saepe omnis repellendus id? Officiis ea iste
-          nobis perferendis. Facilis fuga consectetur eius iste, dolores
-          officiis a? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Blanditiis, voluptates nemo dicta deleniti quos aliquid nihil optio
-          soluta cumque, dolorum quae provident non sequi. Quasi rem minus
-          voluptatem magnam culpa. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Dolor a fuga doloribus amet odio incidunt,
-          reprehenderit nemo officia praesentium dicta at nostrum, vel
-          doloremque tempora, placeat illum blanditiis laudantium cum.
+          <i>Ningún día sin una línea.</i>
+        </p>
+      </article>
+
+      <article>
+        <h2>¿Quienes somos?</h2>
+        <p class="text-justify">
+          OA7 Ingenierías es una empresa dedicada a brindar servicios de
+          ingeniería especializada en el uso de tecnologías geoespaciales.
+          Ofrecemos soluciones de geoposicionamiento, tecnología geoespacial y
+          sistemas GNSS para ingeniería, construcción y catastro. Nuestra
+          prioridad es innovar para una ofrecer seguridad, productividad y
+          eficiencia a nuestros clientes. Somos profesionales altamente
+          calificados y cumplimos normativa nacional y municipal.
         </p>
       </article>
       <article>
-        <h2>NUESTRA VISION</h2>
+        <h2>Misión</h2>
         <p class="text-justify">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt non
-          harum reiciendis maxime, saepe omnis repellendus id? Officiis ea iste
-          nobis perferendis. Facilis fuga consectetur eius iste, dolores
-          officiis a? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Blanditiis, voluptates nemo dicta deleniti quos aliquid nihil optio
-          soluta cumque, dolorum quae provident non sequi. Quasi rem minus
-          voluptatem magnam culpa. Lorem ipsum dolor sit amet consectetur,
-          adipisicing elit. Dolor a fuga doloribus amet odio incidunt,
-          reprehenderit nemo officia praesentium dicta at nostrum, vel
-          doloremque tempora, placeat illum blanditiis laudantium cum.
+          Nuestra misión es poner al servicio de la comunidad las tecnologías
+          geoespaciales.
         </p>
+      </article>
+      <article>
+        <h2>Visión</h2>
+        <p class="text-justify">
+          Ser la empresa pionera en la adopción de tecnologías disruptivas
+          aplicadas a la ingeniería.
+        </p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">EQUIPO DE TRABAJO</h2>
+      <article class="job-team-container">
+        <div class="job-worker">
+          <div class="worker-img">
+            <img src="Assets/Homero-Otavalo.jpg" alt="img-ceo" />
+          </div>
+          <aside class="text-center">
+            <i>Ing. Homero Otavalo</i>
+            <br />
+            <b><i>Ingeniero Civil</i></b>
+            <br />
+            <b><i>CEO</i></b>
+          </aside>
+        </div>
+
+        <div class="job-worker">
+          <div class="worker-img">
+            <img src="Assets/Braulio-Otavalo.jpg" alt="img-cto" />
+          </div>
+          <aside class="text-center">
+            <i>M.Sc. Braulio Otavalo</i>
+            <br />
+            <b><i>Master en Inteligencia Artificial</i></b>
+            <br />
+            <b><i>CTO</i></b>
+          </aside>
+        </div>
       </article>
     </section>
 
@@ -164,7 +213,7 @@
       <div class="trabajos-container">
         <article class="trabajo-card box-shadow-1">
           <aside class="trabajo-card-img">
-            <img src="Assets/Card-Trabajo-1.jpg" alt="Trabajo-1" />
+            <img src="Assets/Job-1.jpg" alt="Trabajo-1" />
           </aside>
           <aside class="title-card">
             <h4 class="text-center">Tipo de trabajo</h4>
@@ -191,7 +240,7 @@
 
         <article class="trabajo-card box-shadow-1">
           <aside class="trabajo-card-img">
-            <img src="Assets/Card-Trabajo-2.jpg" alt="Trabajo-2" />
+            <img src="Assets/Job-2.jpg" alt="Trabajo-2" />
           </aside>
           <aside class="title-card">
             <h4 class="text-center">Tipo de trabajo</h4>
@@ -218,7 +267,7 @@
 
         <article class="trabajo-card box-shadow-1">
           <aside class="trabajo-card-img">
-            <img src="Assets/Card-Trabajo-3.jpg" alt="Trabajo-3" />
+            <img src="Assets/Job-3.jpg" alt="Trabajo-3" />
           </aside>
           <aside class="title-card">
             <h4 class="text-center">Tipo de trabajo</h4>
@@ -245,39 +294,50 @@
       </div>
     </section>
 
-    <div class="text-center">
-      <a href="#nosotros">
-        <img src="Assets/Btn-Back.svg" alt="Btn-Back" />
+    <div class="text-center btn-back">
+      <a href="#Home">
+        <i class="fa-solid fa-arrow-up fa-3x"></i>
       </a>
     </div>
-
     <footer class="footer-container">
       <div class="logo-footer">
         <img src="Assets/LogoOA7.svg" alt="LogoOA7" />
       </div>
 
       <div class="sucursales-footer">
-        <h4>SUCURSALES</h4>
-        <h5>CAYAMBE</h5>
-        <small><i>Calle Terán y Calle Libertad</i></small>
-        <h5>QUITO</h5>
-        <small><i>Calle de las nueces y Psj. Salazar</i></small>
+        <h4>DIRECCIONES</h4>
+        <a href="https://bit.ly/3PtxwwM" target="_blank">
+          <h5>MATRIZ:</h5>
+          <small
+            ><i
+              >De las Nueces N53C y Pasaje Salazar, 170514, Quito – Ecuador</i
+            ></small
+          >
+        </a>
+        <a href="https://bit.ly/3YqghAE" target="_blank">
+          <h5>SUCURSAL:</h5>
+          <small
+            ><i
+              >Calle Libertad y Terán esquina, 171002, Cayambe - Ecuador</i
+            ></small
+          >
+        </a>
       </div>
 
       <div class="contacto-footer">
         <h4>CONTACTOS</h4>
         <br />
-        <a href="#">
+        <a href="contact.html">
           <img src="Assets/email.svg" alt="email" />
           <small><i>oa7ingenierias@gmail.com</i></small>
         </a>
         <br />
-        <a href="#">
+        <a href="https://wa.me/+593999011921" target="_blank">
           <img src="Assets/whatsapp.svg" alt="whatsapp" />
           <small><i>+593 95 905 2701</i></small>
         </a>
         <br />
-        <a href="#">
+        <a href="tel:+593959052701">
           <img src="Assets/phone.svg" alt="phone" />
           <small><i>023260519</i></small>
         </a>
@@ -286,7 +346,7 @@
       <div class="redes-footer">
         <h4>REDES SOCIALES</h4>
         <br />
-        <a href="www.facebook.com/oa7ingenierias">
+        <a href="https://bit.ly/3YlQKZt" target="_blank">
           <img src="Assets/facebook.svg" alt="facebook" />
           <small><i>oa7ingenierias</i></small>
         </a>

@@ -632,6 +632,13 @@ p {
   display: inline-block;
   padding: 0 1rem;
 }
+
+.trabajo-card-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
 /****Card Location****/
 .locations h2 {
   text-align: center;
@@ -823,6 +830,10 @@ p {
   margin-bottom: 1rem;
   /* padding-bottom: 0.5rem; */
   border-bottom: 2px solid var(--black-alpha-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .text-left {
@@ -1021,6 +1032,28 @@ p {
   color: var(--white-color);
 }
 
+/*****Job Team*****/
+.job-team-container {
+  width: var(--max-width);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.job-worker {
+  margin: 1rem;
+  width: 300px;
+}
+
+.worker-img img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 1rem;
+}
+
 /*****Info Subservice*****/
 .hero-image-subservice {
   width: 100%;
@@ -1067,6 +1100,13 @@ p {
 
 .list-jobs a:hover {
   color: var(--second-color);
+}
+
+/*****Job Team*****/
+.job-team-container {
+  width: 100%;
+  /* margin: auto; */
+  flex-direction: column;
 }
 
 /*****Subservices Cards*****/
@@ -1177,6 +1217,7 @@ p {
   .info-nosotros h2 {
     text-align: left;
   }
+
   /*****Characteristic-Subservice*****/
   .charact-container {
     flex-direction: row;
