@@ -1064,11 +1064,12 @@ p {
 
 /*****Job Team*****/
 .job-team-container {
-  width: var(--max-width);
+  /* width: var(--max-width); */
   margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .job-worker {
@@ -1130,13 +1131,6 @@ p {
 
 .list-jobs a:hover {
   color: var(--second-color);
-}
-
-/*****Job Team*****/
-.job-team-container {
-  width: 100%;
-  /* margin: auto; */
-  flex-direction: column;
 }
 
 /*****Subservices Cards*****/
@@ -1248,6 +1242,13 @@ p {
     text-align: left;
   }
 
+  /*****Job Team*****/
+  .job-team-container {
+    max-width: var(--max-width);
+    /* margin: auto; */
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
   /*****Characteristic-Subservice*****/
   .charact-container {
     flex-direction: row;
