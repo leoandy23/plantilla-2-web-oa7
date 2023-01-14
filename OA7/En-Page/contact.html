@@ -9,6 +9,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <title>OA7INGENIERIAS</title>
     <link rel="stylesheet" href="../CSS/index.css" />
     <link rel="icon" href="../Assets/LogoOA7.svg" />
@@ -18,13 +24,13 @@
       content="Hola bienvenid@ a nuestra página web, somos OA7INGENIERIAS una empresa que te brinda excelentes servicios" />
     <link
       rel="canonical"
-      href="https://leoandy23.github.io/plantilla-web-oa7/OA7" />
+      href="https://leoandy23.github.io/plantilla-2-web-oa7/OA7" />
     <link
       rel="favicon"
-      href="https://leoandy23.github.io/plantilla-web-oa7/OA7/Assets/LogoOA7.svg" />
+      href="https://leoandy23.github.io/plantilla-2-web-oa7/OA7/Assets/LogoOA7.svg" />
     <link
       rel="apple-touch-icon"
-      href="https://leoandy23.github.io/plantilla-web-oa7/OA7/Assets/LogoOA7.svg" />
+      href="https://leoandy23.github.io/plantilla-2-web-oa7/OA7/Assets/LogoOA7.svg" />
     <meta name="theme-color" content="#d9006" />
     <meta name="twitter:card" content="summary" />
     <meta property="og:type" content="website" />
@@ -35,47 +41,55 @@
     <meta
       property="og:description"
       name="twitter:description"
-      content="Hola bienvenid@ a nuestra página web, somos OA7INGENIERIAS una empresa que te brinda excelentes servicios" />
+      content="Hola bienvenid@ a nuestra página web, somos OA7INGENIERIAS una empresa que te brinda excelentes servicios de ingeniería civil" />
     <meta
       property="og:image"
       name="twitter:image"
-      content="https://leoandy23.github.io/plantilla-web-oa7/OA7/Assets/hero-image-home.jpg" />
+      content="https://leoandy23.github.io/plantilla-2-web-oa7/OA7/Assets/hero-image-home.jpg" />
     <meta
       property="og:url"
       name="twitter:url"
-      content="https://leoandy23.github.io/plantilla-web-oa7/OA7" />
+      content="https://leoandy23.github.io/plantilla-2-web-oa7/OA7" />
   </head>
   <body>
-    <header class="header" id="contact">
+    <header class="header" id="Home">
       <div class="logo">
         <img src="../Assets/LogoOA7.svg" alt="Logo" />
       </div>
       <div class="header-info">
-        <h3>Location:</h3>
-        <a href="#">
-          <h4>Quito: </h4>
-        <small><i>Calle de las nueces y Psj. Salazar</i></small>
+        <h3>Addresses:</h3>
+        <a href="https://bit.ly/3PtxwwM" target="_blank">
+          <h4>Central office:</h4>
+          <small
+            ><i>
+              De las Nueces N53C y Pasaje Salazar, 170514, Quito – Ecuador</i
+            ></small
+          >
         </a>
-        <a href="#">
-          <h4>Cayambe: </h4>
-        <small><i>Calle Terán y Calle Libertad</i></small>
+        <a href="https://bit.ly/3YqghAE" target="_blank">
+          <h4>Branch office:</h4>
+          <small
+            ><i
+              >Calle Libertad y Terán esquina, 171002, Cayambe - Ecuador</i
+            ></small
+          >
         </a>
       </div>
       <div class="header-info">
-        <h3>Contact:</h3>
-        <a href="#">
-          <img src="../Assets/email.svg" alt="svg-email" />
-        <small><i>  oa7ingenierias@gmail.com</i></small>
+        <h3>Contacts:</h3>
+        <a class="flex-row" href="https://wa.me/+593999011921" target="_blank">
+          <img src="../Assets/whatsapp.svg" alt="whatsapp" />
+          <small><i>+593 95 905 2701</i></small>
         </a>
-        <a href="#">
-          <img src="../Assets/facebook.svg" alt="svg-facebook" />
-        <small><i>  oa7ingenierias</i></small>
-        </a> 
+        <a class="flex-row" href="contact.html">
+          <img src="../Assets/email.svg" alt="svg-email" />
+          <small><i>oa7ingenierias@gmail.com</i></small>
+        </a>
       </div>
       <div class="header-languaje">
-          <span class="es-languaje">Spanish</span>
-          <input type="checkbox" class="btn-languaje" checked>
-          <span class="en-languaje">English</span>
+        <span class="es-languaje">Spanish</span>
+        <input type="checkbox" class="btn-languaje" checked />
+        <span class="en-languaje">English</span>
       </div>
     </header>
 
@@ -89,33 +103,38 @@
           alt="Btn-Menu-Close" />
       </button>
       <nav class="menu">
-        <a href="index.html">Home</a>
+        <a href="index.html">HOME</a>
         <div class="btn-submenu">
           <aside>
-            <span>Services</span>
-            <img src="../Assets/Submenu-Open.svg" alt="Btn-Submenu-Open">
+            <span>SERVICES</span>
+            <img src="../Assets/Submenu-Open.svg" alt="Btn-Submenu-Open" />
           </aside>
-          <nav class="submenu none">
-            <a href="service-1.html">Service 1</a>
-            <a href="service-1.html">Service 2</a>
-            <a href="service-1.html">Service 3</a>
-            <a href="services.html">Other Services</a>
-          </div>
-        <a href="nosotros.html">About us</a>
-        <a href="#contact">Contact</a>
+          <nav class="submenu none" id="submenu">
+            <a href="service-1.html">SURVEYING</a>
+            <a href="service-2.html">TECHNOLOGICAL SOLUTIONS</a>
+            <a href="service-3.html">CIVIL ENGINEERING</a>
+            <!-- <a href="services.html">Otros Servicios</a> -->
+          </nav>
+        </div>
+        <a href="nosotros.html">ABOUT US</a>
+        <a href="#Home">CONTACT</a>
       </nav>
     </section>
 
     <section class="section locations">
-      <h2>NUESTRAS SUCURSALES</h2>
+      <h2>ADDRESSES</h2>
       <div class="location-container">
         <article class="card-location">
           <aside>
-            <h3>Quito</h3>
-            <small><i>Calle de las Nueces y Psj. Salazar</i></small>
+            <h3>Central Office</h3>
+            <small
+              ><i
+                >De las Nueces N53C y Pasaje Salazar, 170514, Quito – Ecuador</i
+              ></small
+            >
           </aside>
           <div>
-            <h3>Ubicación:</h3>
+            <h3>Location:</h3>
             <iframe
               class="box-shadow-1"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1765.5742359016704!2d-78.45741098191895!3d-0.133030720588098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f24fd8ca715%3A0x4d069a79d1fd6a23!2sOA7%20Ingenierias!5e0!3m2!1ses-419!2sec!4v1665634848210!5m2!1ses-419!2sec"
@@ -129,11 +148,15 @@
 
         <article class="card-location">
           <aside>
-            <h3>Cayambe</h3>
-            <small><i>Calle Terán y Calle Libertad</i></small>
+            <h3>Branch Office</h3>
+            <small
+              ><i
+                >Calle Libertad y Terán esquina, 171002, Cayambe - Ecuador</i
+              ></small
+            >
           </aside>
           <div>
-            <h3>Ubicación:</h3>
+            <h3>Location:</h3>
             <iframe
               class="box-shadow-1"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2953.118484210697!2d-78.14441028862478!3d0.04203337252575768!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2a0915816dc913%3A0x325cd3d09beaaca3!2sOA7%20INGENIER%C3%8DAS%20-%20CAYAMBE!5e0!3m2!1ses-419!2sec!4v1665635162815!5m2!1ses-419!2sec"
@@ -149,72 +172,72 @@
 
     <section class="section contacts">
       <article class="contact-redes">
-        <h2>Siguenos en redes sociales</h2>
-        <a href="#">
+        <h2>Follow us on social networks</h2>
+        <a href="https://bit.ly/3YlQKZt" target="_blank">
           <img src="../Assets/facebook.svg" alt="facebook" />
           <small><i>oa7ingenierias</i></small>
         </a>
-        <a href="#">
+        <a href="https://wa.me/+593999011921" target="_blank">
           <img src="../Assets/whatsapp.svg" alt="whatsapp" />
           <small><i>+593 95 905 2701</i></small>
         </a>
-        <a href="#">
+        <a href="mailto:oa7ingenierias@gmail.com">
           <img src="../Assets/email.svg" alt="email" />
           <small><i>oa7ingenierias@gmail.com</i></small>
         </a>
       </article>
 
       <article>
-        <h2>Envianos tus comentarios:</h2>
+        <h2>Send us your comments:</h2>
         <form class="contact-form box-shadow-1">
-          <label for="name"><b>Nombre:</b></label>
+          <label for="name"><b>Name:</b></label>
           <input
             id="name"
             type="text"
             name="name"
-            placeholder="Ingresa tu nombre"
-            title="Nombre solo acepta letras y espacios en blanco"
+            placeholder="Enter your name"
+            title="Name only accepts letters and blank spaces"
             pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" />
 
-          <label for="email"><b>Correo:</b></label>
+          <label for="email"><b>Mail:</b></label>
           <input
             id="email"
             type="email"
             name="email"
-            placeholder="Ingresa tu correo *"
-            title="Email incorrecto"
+            placeholder="Enter your email *"
+            title="Wrong email"
             pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
             required />
-          <label for="phone"><b>Teléfono</b></label>
+          <label for="phone"><b>Phone:</b></label>
           <input
             id="phone"
             type="text"
             name="telefono"
-            placeholder="Ingrese tu numero de teléfono"
+            placeholder="Enter your phone number"
             title="Teléfono incorrecto"
             pattern="^[0-9]{10}$" />
 
-          <label for="comments"><b>Comentarios</b></label>
+          <label for="comments"><b>Comments</b></label>
           <textarea
             name="comments"
             cols="50"
             rows="10"
-            placeholder="Dejame tus comentarios *"
+            placeholder="Leave me your comments *"
             required></textarea>
 
           <div class="contact-form-loader text-center none">
-            <img src="../assets/loader.svg" alt="Enviando..." />
+            <img src="../Assets/loader.svg" alt="Enviando..." />
           </div>
           <aside class="text-center">
-            <input type="submit" class="btn" value="Enviar mensaje" />
+            <input type="submit" class="btn" value="Send Message" />
           </aside>
         </form>
         <article id="gracias" class="modal">
           <div class="modal-content">
             <article class="contact-form-response">
               <h3>
-                ¡Muchas Gracias! <br />
-                Por tus comentarios
+                ¡Thank You! <br />
+                For your comments
               </h3>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -233,9 +256,9 @@
       </article>
     </section>
 
-    <div class="text-center">
-      <a href="#contacto">
-        <img src="../Assets/Btn-Back.svg" alt="Btn-Back" />
+    <div class="text-center btn-back">
+      <a href="#Home">
+        <i class="fa-solid fa-arrow-up fa-3x"></i>
       </a>
     </div>
 
@@ -245,36 +268,48 @@
       </div>
 
       <div class="sucursales-footer">
-        <h4>SUCURSALES</h4>
-        <h5>CAYAMBE</h5>
-        <small><i>Calle Terán y Calle Libertad</i></small>
-        <h5>QUITO</h5>
-        <small><i>Calle de las nueces y Psj. Salazar</i></small>
+        <h4>ADDRESSES:</h4>
+        <a href="https://bit.ly/3PtxwwM" target="_blank">
+          <h5>CENTRAL OFFICE:</h5>
+          <small
+            ><i
+              >De las Nueces N53C y Pasaje Salazar, 170514, Quito – Ecuador</i
+            ></small
+          >
+        </a>
+        <a href="https://bit.ly/3YqghAE" target="_blank">
+          <h5>BRANCH OFFICE:</h5>
+          <small
+            ><i
+              >Calle Libertad y Terán esquina, 171002, Cayambe - Ecuador</i
+            ></small
+          >
+        </a>
       </div>
 
       <div class="contacto-footer">
-        <h4>CONTACTOS</h4>
+        <h4>CONTACTS</h4>
         <br />
-        <a href="#">
+        <a href="contact.html">
           <img src="../Assets/email.svg" alt="email" />
           <small><i>oa7ingenierias@gmail.com</i></small>
         </a>
         <br />
-        <a href="#">
+        <a href="https://wa.me/+593999011921" target="_blank">
           <img src="../Assets/whatsapp.svg" alt="whatsapp" />
           <small><i>+593 95 905 2701</i></small>
         </a>
         <br />
-        <a href="#">
+        <a href="tel:+593959052701">
           <img src="../Assets/phone.svg" alt="phone" />
           <small><i>023260519</i></small>
         </a>
       </div>
 
       <div class="redes-footer">
-        <h4>REDES SOCIALES</h4>
+        <h4>SOCIAL MEDIA</h4>
         <br />
-        <a href="www.facebook.com/oa7ingenierias">
+        <a href="https://bit.ly/3YlQKZt" target="_blank">
           <img src="../Assets/facebook.svg" alt="facebook" />
           <small><i>oa7ingenierias</i></small>
         </a>
